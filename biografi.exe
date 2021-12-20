@@ -1,0 +1,110 @@
+from tkinter import *
+
+root = Tk()
+root.title("Biografi Generator")
+entry = Entry(root)
+entry.grid(row=0,column=0,columnspan = 5)
+Import tkinter.messagebox
+From tkinter.ttk import Frame, Label, Entry
+
+inputs = []
+
+class App(Frame):
+   def __init__(self, parent):
+       Frame.__init__(self, parent)
+       self.parent = parent
+       self.initUI()
+
+
+
+   def initUI(self):
+       self.parent.title("Biografi")
+       self.pack(fill=BOTH, expand=True)
+       global value
+       value = 0
+       global hasil1
+       hasil1 = StringVar()
+       global hasil2
+       hasil2 = StringVar()
+       Global hasil3
+       Hasil3 = StringVar()
+
+
+       global res
+       res = StringVar()
+
+
+
+       frame1 = Frame(self)
+       frame1.pack(fill=X)
+
+
+
+       lbl1 = Label(frame1, text="Nama :", width=15)
+       lbl1.pack(side=LEFT, padx=5, pady=5)
+
+
+
+       entry1 = Entry(frame1,textvariable=hasil1)
+       entry1.pack(fill=X, padx=5, expand=True)
+
+
+
+       frame2 = Frame(self)
+       frame2.pack(fill=X)
+
+
+
+       lbl2 = Label(frame2, text="Umur :", width=15)
+       lbl2.pack(side=LEFT, padx=5, pady=5)
+
+
+
+       entry2 = Entry(frame2,textvariable=hasil2)
+       entry2.pack(fill=X, padx=5, expand=True)
+
+
+
+       frame3 = Frame(self)
+       lbl3 = Label(frame2, text="Umur :", width=15)
+       lbl3.pack(side=LEFT, padx=5, pady=5)
+
+
+
+       entry3 = Entry(frame3,textvariable=hasil3)
+       entry3.pack(fill=X, padx=5, expand=True)
+
+
+
+
+       btncreate = Button(frame3, text="create", width=8, command=handleresult)
+       btncreate.pack(side=LEFT, anchor=N, padx=5, pady=5)
+
+
+
+
+
+
+
+
+       frame4 = Frame(self)
+       frame4.pack(fill=X)
+
+
+
+       lbl4 = Label(frame4, text="Result :", width=10)
+       lbl4.pack(side=LEFT, padx=5, pady=5)
+
+
+
+       result = Entry(frame4,textvariable=res)
+       result.pack(fill=X, padx=5, expand=True)
+
+
+Def handleresult()
+    result = label(root, text="Halo, saya entry1.get() , hobi saya entry2.get(), umur saya entry3.get() tahun, dan saya tinggal di entry4.get())
+
+
+
+
+
